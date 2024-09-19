@@ -1,8 +1,17 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import RootLayout from "@/layouts/RootLayout";
+import Dashboard from "@/pages/Dashboard/Dashboard";
+import Borrowers from "@/pages/Borrowers/Borrowers";
 function App() {
   return (
-    <>
-      <h1>LMS</h1>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<RootLayout />}>
+          <Route path="" element={<Dashboard />} />
+          <Route path="borrowers" element={<Borrowers />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
