@@ -5,514 +5,518 @@ import Pagination from "@/components/UI/Pagination";
 const Borrowers = () => {
   return (
     <>
-      <Modal details={{ title: "Account Ledger" }}>
-        <div className="p-2">
-          <div className="row my-2 ">
-            <div className="col-sm-12 col-md-6 col-lg-4">
-              <div>
-                <label className="form-label fs-6 mb-2 fw-semibold">
-                  Client Name
-                </label>
-                <input
-                  type="text"
-                  className="form-control form-control-sm custom-font"
-                  value="CAPULONG, LUCHIE"
-                />
+      {1 + 1 == 2 && (
+        <Modal details={{ title: "Account Ledger" }}>
+          <div className="p-2">
+            <div className="row my-2 ">
+              <div className="col-sm-12 col-md-6 col-lg-4">
+                <div>
+                  <label className="form-label fs-6 mb-2 fw-semibold">
+                    Client Name
+                  </label>
+                  <input
+                    type="text"
+                    className="form-control form-control-sm custom-font"
+                    value="CAPULONG, LUCHIE"
+                  />
+                </div>
+              </div>
+              <div className="col-sm-12 col-md-6 col-lg-4">
+                <div>
+                  <label className="form-label fs-6 mb-2 fw-semibold">
+                    Account No.
+                  </label>
+                  <input
+                    type="text"
+                    className="form-control form-control-sm custom-font"
+                    value="01-012724"
+                  />
+                </div>
+              </div>
+              <div className="col-sm-12 col-md-6 col-lg-4">
+                <div>
+                  <label className="form-label fs-6 mb-2 fw-semibold">
+                    STATUS
+                  </label>
+                  <input
+                    type="text"
+                    className="form-control form-control-sm custom-font"
+                    value="UPDATED"
+                  />
+                </div>
               </div>
             </div>
-            <div className="col-sm-12 col-md-6 col-lg-4">
-              <div>
-                <label className="form-label fs-6 mb-2 fw-semibold">
-                  Account No.
-                </label>
-                <input
-                  type="text"
-                  className="form-control form-control-sm custom-font"
-                  value="01-012724"
-                />
+            <div className="row mt-2">
+              <div className="col-sm-12 col-md-6 col-lg-4">
+                <div>
+                  <label className="form-label fs-6 mb-2 fw-semibold">
+                    Loan Amount
+                  </label>
+                  <input
+                    type="text"
+                    className="form-control form-control-sm custom-font"
+                    value="182,715.00"
+                  />
+                </div>
+              </div>
+              <div className="col-sm-12 col-md-6 col-lg-4">
+                <div>
+                  <label className="form-label fs-6 mb-2 fw-semibold">
+                    Mode of Payment
+                  </label>
+                  <input
+                    type="text"
+                    className="form-control form-control-sm custom-font"
+                    value="DAILY"
+                  />
+                </div>
+              </div>
+              <div className="col-sm-12 col-md-6 col-lg-4">
+                <div>
+                  <label className="form-label fs-6 mb-2 fw-semibold">
+                    Amortization
+                  </label>
+                  <input
+                    type="text"
+                    className="form-control form-control-sm custom-font"
+                    value="1,439.00"
+                  />
+                </div>
               </div>
             </div>
-            <div className="col-sm-12 col-md-6 col-lg-4">
-              <div>
-                <label className="form-label fs-6 mb-2 fw-semibold">
-                  STATUS
-                </label>
-                <input
-                  type="text"
-                  className="form-control form-control-sm custom-font"
-                  value="UPDATED"
-                />
+            <div className="row mt-2">
+              <div className="col-sm-12 col-md-6 col-lg-4">
+                <div>
+                  <label className="form-label fs-6 mb-2 fw-semibold">
+                    Date Released
+                  </label>
+                  <input
+                    type="date"
+                    className="form-control form-control-sm custom-font"
+                    value="2023-06-27"
+                  />
+                </div>
+              </div>
+              <div className="col-sm-12 col-md-6 col-lg-4">
+                <div>
+                  <label className="form-label fs-6 mb-2 fw-semibold">
+                    Maturity Date
+                  </label>
+                  <input
+                    type="date"
+                    className="form-control form-control-sm custom-font"
+                    value="2023-11-27"
+                  />
+                </div>
+              </div>
+              <div className="col-sm-12 col-md-6 col-lg-4">
+                <div>
+                  <label className="form-label fs-6 mb-2 fw-semibold">
+                    Term
+                  </label>
+                  <input
+                    type="text"
+                    className="form-control form-control-sm custom-font"
+                    value="5"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="row mt-2">
+              <div className="col-sm-12 col-md-6 col-lg-4">
+                <div>
+                  <label className="form-label fs-6 mb-2 fw-semibold">
+                    SCB (Security/Collateral/Balance)
+                  </label>
+                  <input
+                    type="text"
+                    className="form-control form-control-sm custom-font"
+                    value="90,619.00"
+                  />
+                </div>
+              </div>
+              <div className="col-sm-12 col-md-6 col-lg-4">
+                <div>
+                  <label className="form-label fs-6 mb-2 fw-semibold">
+                    Outstanding Balance
+                  </label>
+                  <input
+                    type="text"
+                    className="form-control form-control-sm custom-font text-danger"
+                    value="162,715.00"
+                  />
+                </div>
+              </div>
+              <div className="col-sm-12 col-md-6 col-lg-4">
+                <div>
+                  <label className="form-label fs-6 mb-2 fw-semibold">
+                    Arrears
+                  </label>
+                  <input
+                    type="text"
+                    className="form-control form-control-sm custom-font text-danger"
+                    value="-17,904.00"
+                  />
+                </div>
               </div>
             </div>
           </div>
-          <div className="row mt-2">
-            <div className="col-sm-12 col-md-6 col-lg-4">
-              <div>
-                <label className="form-label fs-6 mb-2 fw-semibold">
-                  Loan Amount
-                </label>
-                <input
-                  type="text"
-                  className="form-control form-control-sm custom-font"
-                  value="182,715.00"
-                />
-              </div>
-            </div>
-            <div className="col-sm-12 col-md-6 col-lg-4">
-              <div>
-                <label className="form-label fs-6 mb-2 fw-semibold">
-                  Mode of Payment
-                </label>
-                <input
-                  type="text"
-                  className="form-control form-control-sm custom-font"
-                  value="DAILY"
-                />
-              </div>
-            </div>
-            <div className="col-sm-12 col-md-6 col-lg-4">
-              <div>
-                <label className="form-label fs-6 mb-2 fw-semibold">
-                  Amortization
-                </label>
-                <input
-                  type="text"
-                  className="form-control form-control-sm custom-font"
-                  value="1,439.00"
-                />
-              </div>
-            </div>
+          <div className="table-responsive mt-3">
+            <table className="table table-bordered table-hover">
+              <thead>
+                <tr>
+                  <th
+                    className="text-center text-dark fw-normal p-1 m-0"
+                    colSpan={3}
+                  ></th>
+                  <th
+                    className="text-center bg-primary text-white fw-normal p-1 m-0"
+                    colSpan={1}
+                  >
+                    Debit
+                  </th>
+                  <th
+                    className="text-center bg-danger text-white fw-normal p-1 m-0"
+                    colSpan={3}
+                  >
+                    Credit
+                  </th>
+                  <th
+                    className="text-center bg-dark text-white fw-normal p-1 m-0"
+                    colSpan={2}
+                  >
+                    Adjustment
+                  </th>
+                </tr>
+                <tr className="text-dark">
+                  <th
+                    className="text-center text-dark fw-normal p-1 m-0"
+                    style={{ textTransform: "capitalize" }}
+                  >
+                    Transaction Date
+                  </th>
+                  <th
+                    className="text-center text-dark fw-normal p-1 m-0"
+                    style={{ textTransform: "capitalize" }}
+                  >
+                    Reference No
+                  </th>
+                  <th
+                    className="text-center text-dark fw-normal p-1 m-0"
+                    style={{ textTransform: "capitalize" }}
+                  >
+                    Particulars
+                  </th>
+                  <th
+                    className="text-center text-dark fw-normal p-1 m-0"
+                    style={{ textTransform: "capitalize" }}
+                  >
+                    Cash Release
+                  </th>
+                  <th
+                    className="text-center text-dark fw-normal p-1 m-0"
+                    style={{ textTransform: "capitalize" }}
+                  >
+                    Payment
+                  </th>
+                  <th
+                    className="text-center text-dark fw-normal p-1 m-0"
+                    style={{ textTransform: "capitalize" }}
+                  >
+                    Discount
+                  </th>
+                  <th
+                    className="text-center text-dark fw-normal p-1 m-0"
+                    style={{ textTransform: "capitalize" }}
+                  >
+                    Penalty
+                  </th>
+                  <th
+                    className="text-center text-dark fw-normal p-1 m-0"
+                    style={{ textTransform: "capitalize" }}
+                  >
+                    Reversal
+                  </th>
+                  <th
+                    className="text-center text-dark fw-normal p-1 m-0"
+                    style={{ textTransform: "capitalize" }}
+                  >
+                    Out. Balance
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    06/27/23
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    16512
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    LOAN RELEASE
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    182,715.00
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0"></td>
+                  <td className="text-center align-middle fw-normal p-1 m-0"></td>
+                  <td className="text-center align-middle fw-normal p-1 m-0"></td>
+                  <td className="text-center align-middle fw-normal p-1 m-0"></td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    182,715.00
+                  </td>
+                </tr>
+                <tr>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    07/01/23
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    605243
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    PAYMENT
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0"></td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    10,000.00
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0"></td>
+                  <td className="text-center align-middle fw-normal p-1 m-0"></td>
+                  <td className="text-center align-middle fw-normal p-1 m-0"></td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    172,715.00
+                  </td>
+                </tr>
+                <tr>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    07/08/23
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    607765
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    PAYMENT
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0"></td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    10,000.00
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0"></td>
+                  <td className="text-center align-middle fw-normal p-1 m-0"></td>
+                  <td className="text-center align-middle fw-normal p-1 m-0"></td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    162,715.00
+                  </td>
+                </tr>
+                <tr>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                </tr>
+                <tr>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                </tr>
+                <tr>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                </tr>
+                <tr>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                </tr>
+                <tr>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                </tr>
+                <tr>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                </tr>
+                <tr>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                  <td className="text-center align-middle fw-normal p-1 m-0">
+                    &nbsp;
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <div className="row mt-2">
-            <div className="col-sm-12 col-md-6 col-lg-4">
-              <div>
-                <label className="form-label fs-6 mb-2 fw-semibold">
-                  Date Released
-                </label>
-                <input
-                  type="date"
-                  className="form-control form-control-sm custom-font"
-                  value="2023-06-27"
-                />
-              </div>
-            </div>
-            <div className="col-sm-12 col-md-6 col-lg-4">
-              <div>
-                <label className="form-label fs-6 mb-2 fw-semibold">
-                  Maturity Date
-                </label>
-                <input
-                  type="date"
-                  className="form-control form-control-sm custom-font"
-                  value="2023-11-27"
-                />
-              </div>
-            </div>
-            <div className="col-sm-12 col-md-6 col-lg-4">
-              <div>
-                <label className="form-label fs-6 mb-2 fw-semibold">Term</label>
-                <input
-                  type="text"
-                  className="form-control form-control-sm custom-font"
-                  value="5"
-                />
-              </div>
-            </div>
-          </div>
-          <div className="row mt-2">
-            <div className="col-sm-12 col-md-6 col-lg-4">
-              <div>
-                <label className="form-label fs-6 mb-2 fw-semibold">
-                  SCB (Security/Collateral/Balance)
-                </label>
-                <input
-                  type="text"
-                  className="form-control form-control-sm custom-font"
-                  value="90,619.00"
-                />
-              </div>
-            </div>
-            <div className="col-sm-12 col-md-6 col-lg-4">
-              <div>
-                <label className="form-label fs-6 mb-2 fw-semibold">
-                  Outstanding Balance
-                </label>
-                <input
-                  type="text"
-                  className="form-control form-control-sm custom-font text-danger"
-                  value="162,715.00"
-                />
-              </div>
-            </div>
-            <div className="col-sm-12 col-md-6 col-lg-4">
-              <div>
-                <label className="form-label fs-6 mb-2 fw-semibold">
-                  Arrears
-                </label>
-                <input
-                  type="text"
-                  className="form-control form-control-sm custom-font text-danger"
-                  value="-17,904.00"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="table-responsive mt-3">
-          <table className="table table-bordered table-hover">
-            <thead>
-              <tr>
-                <th
-                  className="text-center text-dark fw-normal p-1 m-0"
-                  colSpan={3}
-                ></th>
-                <th
-                  className="text-center bg-primary text-white fw-normal p-1 m-0"
-                  colSpan={1}
-                >
-                  Debit
-                </th>
-                <th
-                  className="text-center bg-danger text-white fw-normal p-1 m-0"
-                  colSpan={3}
-                >
-                  Credit
-                </th>
-                <th
-                  className="text-center bg-dark text-white fw-normal p-1 m-0"
-                  colSpan={2}
-                >
-                  Adjustment
-                </th>
-              </tr>
-              <tr className="text-dark">
-                <th
-                  className="text-center text-dark fw-normal p-1 m-0"
-                  style={{ textTransform: "capitalize" }}
-                >
-                  Transaction Date
-                </th>
-                <th
-                  className="text-center text-dark fw-normal p-1 m-0"
-                  style={{ textTransform: "capitalize" }}
-                >
-                  Reference No
-                </th>
-                <th
-                  className="text-center text-dark fw-normal p-1 m-0"
-                  style={{ textTransform: "capitalize" }}
-                >
-                  Particulars
-                </th>
-                <th
-                  className="text-center text-dark fw-normal p-1 m-0"
-                  style={{ textTransform: "capitalize" }}
-                >
-                  Cash Release
-                </th>
-                <th
-                  className="text-center text-dark fw-normal p-1 m-0"
-                  style={{ textTransform: "capitalize" }}
-                >
-                  Payment
-                </th>
-                <th
-                  className="text-center text-dark fw-normal p-1 m-0"
-                  style={{ textTransform: "capitalize" }}
-                >
-                  Discount
-                </th>
-                <th
-                  className="text-center text-dark fw-normal p-1 m-0"
-                  style={{ textTransform: "capitalize" }}
-                >
-                  Penalty
-                </th>
-                <th
-                  className="text-center text-dark fw-normal p-1 m-0"
-                  style={{ textTransform: "capitalize" }}
-                >
-                  Reversal
-                </th>
-                <th
-                  className="text-center text-dark fw-normal p-1 m-0"
-                  style={{ textTransform: "capitalize" }}
-                >
-                  Out. Balance
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  06/27/23
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  16512
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  LOAN RELEASE
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  182,715.00
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0"></td>
-                <td className="text-center align-middle fw-normal p-1 m-0"></td>
-                <td className="text-center align-middle fw-normal p-1 m-0"></td>
-                <td className="text-center align-middle fw-normal p-1 m-0"></td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  182,715.00
-                </td>
-              </tr>
-              <tr>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  07/01/23
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  605243
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  PAYMENT
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0"></td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  10,000.00
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0"></td>
-                <td className="text-center align-middle fw-normal p-1 m-0"></td>
-                <td className="text-center align-middle fw-normal p-1 m-0"></td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  172,715.00
-                </td>
-              </tr>
-              <tr>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  07/08/23
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  607765
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  PAYMENT
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0"></td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  10,000.00
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0"></td>
-                <td className="text-center align-middle fw-normal p-1 m-0"></td>
-                <td className="text-center align-middle fw-normal p-1 m-0"></td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  162,715.00
-                </td>
-              </tr>
-              <tr>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-              </tr>
-              <tr>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-              </tr>
-              <tr>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-              </tr>
-              <tr>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-              </tr>
-              <tr>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-              </tr>
-              <tr>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-              </tr>
-              <tr>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-                <td className="text-center align-middle fw-normal p-1 m-0">
-                  &nbsp;
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </Modal>
+        </Modal>
+      )}
       <div className="card mt-3">
         <Card title="Search Patient">
           <div className="row mt-4">
