@@ -18,7 +18,7 @@ const Navbar = () => {
       >
         <div className="navbar-nav align-items-center">
           <div className="nav-item navbar-search-wrapper mb-2">
-            <h4 className="mt-4 fw-bold">Current Page</h4>
+            <h4 className="mt-4 fw-bold">Borrowers List</h4>
           </div>
         </div>
 

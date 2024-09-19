@@ -24,7 +24,7 @@ const Sidebar = () => {
             /> */}
           </span>
           <span className="app-brand-text demo menu-text fw-bold mx-auto">
-            LMS
+            Logo - LMS
           </span>
         </div>
         <a
@@ -37,8 +37,8 @@ const Sidebar = () => {
                 <input
                   type="checkbox"
                   className="switch-input switch-input"
-                  true-value={true}
-                  false-value={false}
+                  // true-value={true}
+                  // false-value={false}
                 />
                 <span className="switch-toggle-slider">
                   <span className="switch-on"></span>
@@ -58,8 +58,32 @@ const Sidebar = () => {
         </li>
         <li className="menu-item">
           <a href="javascript:void(0);" className="menu-link">
-            <i className="menu-icon tf-icons"></i>
-            <div>label</div>
+            <i className="menu-icon tf-icons ti ti-dashboard"></i>
+            <div>Dashboard</div>
+          </a>
+        </li>
+        <li className="menu-item active">
+          <a href="javascript:void(0);" className="menu-link">
+            <i className="menu-icon tf-icons ti ti-users-group"></i>
+            <div>Borrowers</div>
+          </a>
+        </li>
+        <li className="menu-item">
+          <a href="javascript:void(0);" className="menu-link">
+            <i className="menu-icon tf-icons ti ti-printer"></i>
+            <div>Reports</div>
+          </a>
+        </li>
+        <li className="menu-item">
+          <a href="javascript:void(0);" className="menu-link">
+            <i className="menu-icon tf-icons ti ti-settings"></i>
+            <div>System Settings</div>
+          </a>
+        </li>
+        <li className="menu-item">
+          <a href="javascript:void(0);" className="menu-link">
+            <i className="menu-icon tf-icons ti ti-users"></i>
+            <div>User Management</div>
           </a>
         </li>
         <li className="menu-header small text-uppercase">
