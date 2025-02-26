@@ -270,6 +270,18 @@ button:disabled {
   }
 }
 
+
+.nav-menu-x {
+  visibility: hidden !important;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-menu-x {
+    visibility: visible !important;
+  }
+
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;

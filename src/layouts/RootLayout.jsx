@@ -48,6 +48,12 @@ const RootLayout = () => {
             <div className="content-backdrop fade"></div>
           </div>
           {/* Content wrapper */}
+          <div className="nav-menu-x position-fixed text-white w-100 bg-primary px-5 py-4 bottom-0 d-flex justify-content-between align-items-center">
+            <div>A</div>
+            <div>A</div>
+            <div>A</div>
+            <div>A</div>
+          </div>
         </div>
       </div>
       <div
