@@ -518,7 +518,7 @@ const Borrowers = () => {
         </Modal>
       )}
       <div className="card mt-3">
-        <Card title="Search Patient">
+        <Card title="Search">
           <div className="row mt-4">
             <div className="col-sm-12 col-md-6 col-lg-3">
               <div>

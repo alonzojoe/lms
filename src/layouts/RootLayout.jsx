@@ -1,17 +1,42 @@
+import { useEffect } from "react";
+import useToggle from "@/hooks/useToggle";
 import { Outlet } from "react-router-dom";
 import Navbar from "@/layouts/components/Navbar";
 import Sidebar from "@/layouts/components/Sidebar";
 
 const RootLayout = () => {
+  const [sideBar, toggleSidebar] = useToggle(false);
+
+  useEffect(() => {
+    console.log(`side bar triggered`);
+    const htmlEl = document.documentElement;
+
+    if (sideBar) {
+      htmlEl.classList.add(
+        "layout-navbar-fixed",
+        "layout-compact",
+        "layout-menu-fixed",
+        "layout-menu-expanded"
+      );
+    } else {
+      htmlEl.classList.remove(
+        "layout-navbar-fixed",
+        "layout-compact",
+        "layout-menu-fixed",
+        "layout-menu-expanded"
+      );
+    }
+  }, [sideBar]);
+
   return (
     <div className="layout-wrapper layout-content-navbar">
       <div className="layout-container">
         {/* Sidebar */}
-        <Sidebar />
+        <Sidebar toggleSidebar={toggleSidebar} isToggled={sideBar} />
         {/* / Sidebar */}
         <div className="layout-page">
           {/* Navbar */}
-          <Navbar />
+          <Navbar toggleSidebar={toggleSidebar} isToggled={sideBar} />
           {/* Navbar */}
           {/* Content wrapper */}
           <div className="content-wrapper">

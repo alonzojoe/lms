@@ -1,10 +1,8 @@
-import React from "react";
-
-const Sidebar = () => {
+const Sidebar = ({ toggleSidebar, isToggled }) => {
   return (
     <aside
       id="layout-menu"
-      className="layout-menu menu-vertical bg-menu-theme"
+      className="layout-menu menu-vertical bg-menu-theme x-sidebar"
       style={{
         touchAction: "none",
         userSelect: "none",
@@ -28,7 +26,7 @@ const Sidebar = () => {
           </span>
         </div>
         <a
-          href="javascript:void(0);"
+          href="#"
           className="layout-menu-toggle menu-link text-large ms-auto mb-2"
         >
           <div className="demo-vertical-spacing btn-switch">
@@ -37,6 +35,8 @@ const Sidebar = () => {
                 <input
                   type="checkbox"
                   className="switch-input switch-input"
+                  onChange={() => toggleSidebar()}
+                  checked={isToggled}
                   // true-value={true}
                   // false-value={false}
                 />
@@ -57,31 +57,31 @@ const Sidebar = () => {
           <span className="menu-header-text">Home</span>
         </li>
         <li className="menu-item">
-          <a href="javascript:void(0);" className="menu-link">
+          <a href="#" className="menu-link">
             <i className="menu-icon tf-icons ti ti-dashboard"></i>
             <div>Dashboard</div>
           </a>
         </li>
         <li className="menu-item active">
-          <a href="javascript:void(0);" className="menu-link">
+          <a href="#" className="menu-link">
             <i className="menu-icon tf-icons ti ti-users-group"></i>
             <div>Borrowers</div>
           </a>
         </li>
         <li className="menu-item">
-          <a href="javascript:void(0);" className="menu-link">
+          <a href="#" className="menu-link">
             <i className="menu-icon tf-icons ti ti-printer"></i>
             <div>Reports</div>
           </a>
         </li>
         <li className="menu-item">
-          <a href="javascript:void(0);" className="menu-link">
+          <a href="#" className="menu-link">
             <i className="menu-icon tf-icons ti ti-settings"></i>
             <div>System Settings</div>
           </a>
         </li>
         <li className="menu-item">
-          <a href="javascript:void(0);" className="menu-link">
+          <a href="#" className="menu-link">
             <i className="menu-icon tf-icons ti ti-users"></i>
             <div>User Management</div>
           </a>
@@ -90,7 +90,7 @@ const Sidebar = () => {
           <span className="menu-header-text">Auth</span>
         </li>
         <li className="menu-item">
-          <a href="javascript:void(0);" className="menu-link">
+          <a href="#" className="menu-link">
             <i className="menu-icon tf-icons ti ti-logout"></i>
             <div data-i18n="logout">Logout</div>
           </a>
