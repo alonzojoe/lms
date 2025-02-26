@@ -36,7 +36,7 @@ const RootLayout = () => {
         {/* / Sidebar */}
         <div className="layout-page">
           {/* Navbar */}
-          <Navbar toggleSidebar={toggleSidebar} isToggled={sideBar} />
+          <Navbar toggleSidebar={toggleSidebar} sideBar={sideBar} />
           {/* Navbar */}
           {/* Content wrapper */}
           <div className="content-wrapper">
@@ -50,7 +50,10 @@ const RootLayout = () => {
           {/* Content wrapper */}
         </div>
       </div>
-      <div className="layout-overlay layout-menu-toggle"></div>
+      <div
+        className="layout-overlay layout-menu-toggle"
+        onClick={() => toggleSidebar()}
+      ></div>
       <div className="drag-target"></div>
     </div>
   );
