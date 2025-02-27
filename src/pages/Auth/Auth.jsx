@@ -1,27 +1,23 @@
-import React from "react";
-
+import AuthImg from "@/assets/images/auth-img.png";
+import Light from "@/assets/images/light.png";
+import "@/assets/vendor/css/pages/page-auth.css";
 const Auth = () => {
   return (
-    <div
-      className="authentication-wrapper authentication-cover authentication-bg"
-      style={{
-        height: `100dvh`,
-      }}
-    >
+    <div className="authentication-wrapper authentication-cover authentication-bg">
       <div className="authentication-inner row">
-        <div className="d-none d-lg-flex align-items-center col-lg-7 p-0">
+        <div className="d-none d-lg-flex col-lg-7 p-0">
           <div className="auth-cover-bg auth-cover-bg-color d-flex justify-content-center align-items-center">
             <img
-              src="../../assets/img/illustrations/auth-login-illustration-light.png"
-              alt="auth-login-cover"
+              src={AuthImg}
+              alt="auth-register-cover"
               className="img-fluid my-5 auth-illustration"
               data-app-light-img="illustrations/auth-login-illustration-light.png"
               data-app-dark-img="illustrations/auth-login-illustration-dark.png"
             />
 
             <img
-              src="../../assets/img/illustrations/bg-shape-image-light.png"
-              alt="auth-login-cover"
+              src={Light}
+              alt="auth-register-cover"
               className="platform-bg"
               data-app-light-img="illustrations/bg-shape-image-light.png"
               data-app-dark-img="illustrations/bg-shape-image-dark.png"
@@ -29,7 +25,7 @@ const Auth = () => {
           </div>
         </div>
 
-        <div className="d-flex col-12 col-lg-5 align-items-center p-sm-5 p-4">
+        <div className="d-flex col-12 col-lg-5 align-items-center p-sm-5 p-4 bg-white">
           <div className="w-px-400 mx-auto">
             <div className="app-brand mb-4">
               <a href="index.html" className="app-brand-link gap-2">
