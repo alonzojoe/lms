@@ -6,7 +6,6 @@ const Modal = ({ details, client, children }) => {
           className="position-absolute cst-close"
           style={{
             fontSize: "20px",
-            right: "0",
             top: "-4px",
             right: "5px",
           }}
