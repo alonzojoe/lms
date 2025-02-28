@@ -1,51 +1,64 @@
+import { authSchema } from "@/schema";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+
 const Login = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isSubmitting },
+    reset,
+  } = useForm({ resolver: zodResolver(authSchema) });
+
+  const handleSignIn = async (formData) => {
+    console.log("login data", formData);
+    reset();
+  };
+
   return (
     <>
       <h3 className="mb-1 fw-bold">Welcome to System Name! 👋</h3>
       <p className="mb-4">Please sign-in to your account.</p>
 
       <form
-        id="formAuthentication"
         className="mb-3 fv-plugins-bootstrap5 fv-plugins-framework"
-        action="index.html"
-        method="POST"
-        noValidate="novalidate"
+        onSubmit={handleSubmit((data) => handleSignIn(data))}
       >
-        <div className="mb-3 fv-plugins-icon-container">
+        <div
+          className={`mb-3 fv-plugins-icon-container ${
+            errors.email ? "group-invalid" : ""
+          }`}
+        >
           <label htmlFor="email" className="form-label">
-            Email or Username
+            Email
           </label>
           <input
-            type="text"
-            className="form-control"
+            {...register("email")}
+            type="email"
+            className={`form-control`}
             id="email"
-            name="email-username"
-            autoFocus=""
           />
-          <div className="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div>
+          <div className="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback">
+            {errors.email?.message}
+          </div>
         </div>
-        <div className="mb-3 form-password-toggle fv-plugins-icon-container">
-          <div className="d-flex justify-content-between">
-            <label className="form-label" htmlFor="password">
-              Password
-            </label>
-            {/* <a href="auth-forgot-password-cover.html">
-        <small>Forgot Password?</small>
-      </a> */}
+        <div
+          className={`mb-3 fv-plugins-icon-container ${
+            errors.password ? "group-invalid" : ""
+          }`}
+        >
+          <label htmlFor="password" className="form-label">
+            Password
+          </label>
+          <input
+            {...register("password")}
+            type="password"
+            className={`form-control`}
+            id="password"
+          />
+          <div className="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback">
+            {errors.password?.message}
           </div>
-          <div className="input-group input-group-merge has-validation">
-            <input
-              type="password"
-              id="password"
-              className="form-control"
-              name="password"
-              aria-describedby="password"
-            />
-            <span className="input-group-text cursor-pointer">
-              <i className="ti ti-eye-off"></i>
-            </span>
-          </div>
-          <div className="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div>
         </div>
         <div className="mb-3">
           <div className="form-check">
@@ -60,8 +73,12 @@ const Login = () => {
             </label>
           </div>
         </div>
-        <button className="btn btn-primary d-grid w-100 waves-effect waves-light">
-          Sign in
+        <button
+          type="submit"
+          className="btn btn-primary d-grid w-100 waves-effect waves-light"
+          disabled={isSubmitting}
+        >
+          {isSubmitting ? "Signing in..." : `Sign in`}
         </button>
         <input type="hidden" />
       </form>
