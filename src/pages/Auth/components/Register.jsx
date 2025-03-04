@@ -3,7 +3,7 @@ import { registrySchema } from "@/schema";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 
-const Register = () => {
+const Register = ({ onToggle }) => {
   const elId = useId();
   const {
     register,
@@ -104,12 +104,12 @@ const Register = () => {
         <input type="hidden" />
       </form>
 
-      <p className="text-center">
+      <div className="text-center">
         <span>Already have an account?</span>{" "}
-        <a href="auth-register-cover.html">
+        <div className="cursor-pointer text-primary" onClick={() => onToggle()}>
           <span>Click here to log in</span>
-        </a>
-      </p>
+        </div>
+      </div>
 
       <div className="divider my-4"></div>
     </>

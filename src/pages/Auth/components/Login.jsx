@@ -2,7 +2,7 @@ import { authSchema } from "@/schema";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 
-const Login = () => {
+const Login = ({ onToggle }) => {
   const {
     register,
     handleSubmit,
@@ -83,12 +83,12 @@ const Login = () => {
         <input type="hidden" />
       </form>
 
-      <p className="text-center">
+      <div className="text-center">
         <span>New on our platform?</span>{" "}
-        <a href="auth-register-cover.html">
+        <div className="cursor-pointer text-primary" onClick={() => onToggle()}>
           <span>Create an account</span>
-        </a>
-      </p>
+        </div>
+      </div>
 
       <div className="divider my-4"></div>
     </>
