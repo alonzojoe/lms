@@ -97,7 +97,11 @@ const Auth = () => {
                 </li>
               </ul>
               <div className="tab-content">
-                {!tab ? <Login /> : <Register />}
+                {!tab ? (
+                  <Login onToggle={toggleTab} />
+                ) : (
+                  <Register onToggle={toggleTab} />
+                )}
               </div>
             </div>
           </div>
